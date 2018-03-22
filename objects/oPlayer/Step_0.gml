@@ -1,3 +1,5 @@
+// Movement
+
 key_left = keyboard_check(vk_left);
 key_right = keyboard_check(vk_right);
 key_jump = keyboard_check_pressed(vk_space);
@@ -28,3 +30,27 @@ if (place_meeting(x, y + vsp, oWall)) {
 }
 
 y += vsp;
+
+// Animation
+
+if (!place_meeting(x, y + 1, oWall)) {
+	// We're aiborne!
+	sprite_index = sPlayerJump;
+	image_speed = 0;
+	if (vsp > 0) {
+		image_index = 1;
+	} else {
+		image_index = 0;
+	}
+} else {
+	// We're grounded!
+	image_speed = 1;
+	if (hsp == 0) {
+		sprite_index = sPlayer;
+	} else {
+		sprite_index = sPlayerRunning;
+	}
+}
+
+// There is nothing sexier than a ternery condition
+image_xscale = sign(hsp) != 0 ? sign(hsp) : image_xscale;
