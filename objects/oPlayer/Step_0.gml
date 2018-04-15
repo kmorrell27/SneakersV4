@@ -1,24 +1,33 @@
-// Movement
+#region // Get player input
 
-key_left = keyboard_check(vk_left) || keyboard_check(ord("A"));
-key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
-key_jump = keyboard_check_pressed(vk_space);
+if (hasControl) {
+	key_left = keyboard_check(vk_left) || keyboard_check(ord("A"));
+	key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
+	key_jump = keyboard_check_pressed(vk_space);
 
-if (key_left || key_right || key_jump) {
-	controller = false;
+	if (key_left || key_right || key_jump) {
+		controller = false;
+	}
+
+	if (abs(gamepad_axis_value(0, gp_axislh)) > 0.2) {
+		key_left = abs(min(gamepad_axis_value(0, gp_axislh), 0));
+		key_right = max(gamepad_axis_value(0, gp_axislh), 0);
+		controller = true;
+	}
+
+	if (gamepad_button_check(0, gp_face1)) {
+		key_jump = true;
+		controller = true;
+	}
+} else {
+	key_left = false;
+	key_right = false;
+	key_jump = false;
 }
 
-if (abs(gamepad_axis_value(0, gp_axislh)) > 0.2) {
-	key_left = abs(min(gamepad_axis_value(0, gp_axislh), 0));
-	key_right = max(gamepad_axis_value(0, gp_axislh), 0);
-	controller = true;
-}
+#endregion
 
-if (gamepad_button_check(0, gp_face1)) {
-	key_jump = true;
-	controller = true;
-}
-
+#region // Calculate movement
 var move = key_right - key_left;
 
 hsp = move * walksp;
@@ -47,7 +56,9 @@ if (place_meeting(x, y + vsp, oWall)) {
 
 y += vsp;
 
-// Animation
+#endregion
+
+#region // Animation
 
 if (!place_meeting(x, y + 1, oWall)) {
 	// We're aiborne!
@@ -70,3 +81,5 @@ if (!place_meeting(x, y + 1, oWall)) {
 
 // There is nothing sexier than a ternery condition
 image_xscale = sign(hsp) != 0 ? sign(hsp) : image_xscale;
+
+#endregion

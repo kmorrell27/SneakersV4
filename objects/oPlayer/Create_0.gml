@@ -6,3 +6,4 @@ grv = 0.3;
 walksp = 4;
 
 controller = false;
+hasControl = true;
