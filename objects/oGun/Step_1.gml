@@ -18,6 +18,7 @@ if ((mouse_check_button(mb_left)  || gamepad_button_check(0, gp_shoulderlb)) && 
 	firingDelay = 5;
 	recoil = 4;
 	with (instance_create_layer(x, y, "Bullet", oBullet)) {
+		screenShake(2, 10);
 		speed = 25;
 		// This is fun
 		direction = other.image_angle + random_range(-3, 3);
