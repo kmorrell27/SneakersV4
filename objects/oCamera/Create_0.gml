@@ -10,3 +10,5 @@ shakeLength = 0;
 shakeMagnitude = 0;
 shakeRemain = 0;
 buffer = 32;
+
+mountainLayerId = layer_get_id("Mountains");

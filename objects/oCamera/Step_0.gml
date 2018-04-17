@@ -17,3 +17,8 @@ y += random_range(-shakeRemain, shakeRemain);
 shakeRemain = max(0, shakeRemain - ((1 / shakeLength) * shakeMagnitude));
 
 camera_set_view_pos(cam, x - view_w_half, y - view_h_half);
+
+if (layer_exists(mountainLayerId)) {
+	layer_x(mountainLayerId, x / 2);
+
+}

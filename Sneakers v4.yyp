@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "4327074c-c1aa-4ada-b0f6-ba362272087f",
+            "Value": {
+                "id": "59ed2285-d944-47e9-a6e3-f05f18821335",
+                "resourcePath": "sprites\\sMountain\\sMountain.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4e3d30d2-d6bf-46d2-8267-fa505c32aaab",
             "Value": {
                 "id": "6cd52cdf-8c88-418a-b0f9-a7e906766153",
@@ -244,6 +252,14 @@
                 "id": "cabe9c52-1a97-436e-8e88-22f4109d85f5",
                 "resourcePath": "objects\\oTransition\\oTransition.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "95c56b7e-789f-4795-ad7f-e18d45ce3606",
+            "Value": {
+                "id": "123e6044-cdc9-46b0-a598-b32dee0025ef",
+                "resourcePath": "sprites\\sTrees\\sTrees.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
