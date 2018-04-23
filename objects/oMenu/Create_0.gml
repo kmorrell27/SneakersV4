@@ -1,5 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
+// THIS IS BAD DESIGN! I Should have some init script/object
+
+#macro SAVEFILE "Save.sav"
 
 guiWidth = display_get_gui_width();
 guiHeight = display_get_gui_height();

@@ -23,6 +23,11 @@ if (menuX > guiWidth + 150 && menuCommitted > -1) {
 			game_end();
 			break;
 		case 1:
+			if (file_exists(SAVEFILE)) {
+				var file = file_text_open_read(SAVEFILE);
+				slideTransition(TRANS_MODE.GOTO, file_text_read_real(file));
+				file_text_close(file);
+			}
 			break;
 		case 2:
 			slideTransition(TRANS_MODE.NEXT);
