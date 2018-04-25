@@ -71,6 +71,14 @@ if (!place_meeting(x, y + 1, oWall)) {
 	}
 } else {
 	// We're grounded!
+	
+	// Oh I don't like this at all
+	// We've just landed
+	if (sprite_index == sPlayerJump) {
+		// This bit is kind of clever though
+		audio_sound_pitch(snLanding, choose(0.8, 1.0, 1.2));
+		audio_play_sound(snLanding, 0, false);
+	}
 	image_speed = 1;
 	if (hsp == 0) {
 		sprite_index = sPlayer;

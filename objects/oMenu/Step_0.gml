@@ -13,6 +13,7 @@ if (menuControl) {
 		menuXTarget = guiWidth + 200;
 		menuCommitted = menuCursor;
 		screenShake(4, 30);
+		audio_play_sound(snDeath, 0, false);
 		menuControl = false;
 	}
 }
