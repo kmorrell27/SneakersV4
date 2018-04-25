@@ -463,6 +463,14 @@
             }
         },
         {
+            "Key": "fb953545-ebc3-4741-b9fd-fe2bc4d5f021",
+            "Value": {
+                "id": "11f946a4-9aeb-4039-aae4-00b18389ebb4",
+                "resourcePath": "objects\\oEnemyBig\\oEnemyBig.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "fdc3c724-0aae-44ef-a6c8-1818e9c70baf",
             "Value": {
                 "id": "13427c7f-56ae-4f5f-a750-3f24f4f9e7fd",

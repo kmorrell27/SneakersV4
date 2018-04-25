@@ -40,4 +40,5 @@ if (!place_meeting(x, y + 1, oWall)) {
 }
 
 // There is nothing sexier than a ternery condition
-image_xscale = sign(hsp) != 0 ? sign(hsp) : image_xscale;
+image_xscale = sign(hsp) != 0 ? sign(hsp) * size : image_xscale;
+image_yscale = size;
