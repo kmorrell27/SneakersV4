@@ -10,30 +10,17 @@ if (menuControl) {
 	} else if (keyboard_check_pressed(vk_down)) {
 		menuCursor = menuCursor - 1 < 0 ? menuLength - 1 : menuCursor - 1;
 	} else if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space)) {
-		menuXTarget = guiWidth + 200;
-		menuCommitted = menuCursor;
-		screenShake(4, 30);
-		audio_play_sound(snDeath, 0, false);
+		MenuSelect(menuCursor);
 		menuControl = false;
 	}
-}
-
-if (menuX > guiWidth + 150 && menuCommitted > -1) {
-	switch (menuCommitted) {
-		case 0:
-			game_end();
-			break;
-		case 1:
-			if (file_exists(SAVEFILE)) {
-				var file = file_text_open_read(SAVEFILE);
-				slideTransition(TRANS_MODE.GOTO, file_text_read_real(file));
-				file_text_close(file);
-			}
-			break;
-		case 2:
-			slideTransition(TRANS_MODE.NEXT);
-			break;
-		default:
-			break;
+	
+	var mouseYGui = device_mouse_y_to_gui(0);
+	if (mouseYGui < menuY && mouseYGui > menuTop) {
+		menuCursor = (menuY - mouseYGui) div (menuItemHeight * 1.5); 
+		
+		if (mouse_check_button_pressed(mb_left)) {
+			MenuSelect(menuCursor);
+			menuControl = false;
+		}
 	}
 }
