@@ -1,5 +1,11 @@
 vsp = vsp + grv;
 
+// Green vs red koopa behavior
+if (grounded && afraidOfHeights && !place_meeting(x + hsp, y + 1, oWall)) {
+	// Flip it and reverse it
+	hsp = -hsp;
+}
+
 if (place_meeting(x + hsp, y, oWall)) {
 	while (!place_meeting(x + sign(hsp), y, oWall)) {
 		x += sign(hsp);
@@ -21,6 +27,7 @@ y += vsp;
 // Animation
 
 if (!place_meeting(x, y + 1, oWall)) {
+	grounded = false;
 	// We're aiborne!
 	sprite_index = sEnemyJumping;
 	image_speed = 0;
@@ -30,6 +37,7 @@ if (!place_meeting(x, y + 1, oWall)) {
 		image_index = 0;
 	}
 } else {
+	grounded = true;
 	// We're grounded!
 	image_speed = 1;
 	if (hsp == 0) {

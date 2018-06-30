@@ -163,6 +163,34 @@
             "value": "1",
             "varName": "size",
             "varType": 0
+        },
+        {
+            "id": "952f6e85-a4a4-432f-bbdc-f0beb99d4ecd",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "afraidOfHeights",
+            "varType": 3
+        },
+        {
+            "id": "9f07a665-b1f6-46b6-88e3-b99c5d1bcfe9",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "False",
+            "varName": "grounded",
+            "varType": 3
         }
     ],
     "solid": false,
