@@ -34,8 +34,11 @@ hsp = move * walksp;
 
 vsp = vsp + grv;
 
-if (place_meeting(x, y + 1, oWall) && key_jump) {
+// Jumping
+jumpBuffer--;
+if (jumpBuffer > 0 && key_jump) {
 	vsp = -10;
+	jumpBuffer = 0;
 }
 
 if (place_meeting(x + hsp, y, oWall)) {
@@ -71,6 +74,7 @@ if (!place_meeting(x, y + 1, oWall)) {
 	}
 } else {
 	// We're grounded!
+	jumpBuffer = 10;
 	
 	// Oh I don't like this at all
 	// We've just landed

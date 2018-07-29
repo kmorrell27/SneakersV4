@@ -4,6 +4,7 @@ hsp = 0;
 vsp = 0;
 grv = 0.3;
 walksp = 4;
+jumpBuffer = 0;
 
 controller = false;
 hasControl = true;
