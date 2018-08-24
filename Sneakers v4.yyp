@@ -183,6 +183,22 @@
             }
         },
         {
+            "Key": "324dfcb0-88b3-469a-935c-ec7bae9f5b10",
+            "Value": {
+                "id": "31ea137b-18de-454e-b52c-ba2eed50b102",
+                "resourcePath": "sprites\\sHitSpark\\sHitSpark.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "36781a64-7b7d-4e73-9105-a6605a66bb70",
+            "Value": {
+                "id": "6d8effc0-338f-4aac-b983-7ae7ec771555",
+                "resourcePath": "objects\\oCrate\\oCrate.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3d061020-07e2-470b-8f78-07d9cee2ad25",
             "Value": {
                 "id": "2b2800e8-d8c0-4a46-95d0-38d2ee39fe25",
@@ -195,6 +211,14 @@
             "Value": {
                 "id": "c9e0a72d-791c-499f-826e-4da365d6bc91",
                 "resourcePath": "objects\\oMenu\\oMenu.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "42dd6105-ce38-4115-b695-84428660bfbe",
+            "Value": {
+                "id": "5de51b04-9d22-4f54-9538-e469d52c8f83",
+                "resourcePath": "objects\\oDust\\oDust.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -228,6 +252,14 @@
                 "id": "1f5a99fb-2f2b-456c-bb82-61a34d566be8",
                 "resourcePath": "rooms\\room01\\room01.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "55eb3600-3493-4e85-9e59-9877acc57535",
+            "Value": {
+                "id": "01d52dfc-700e-415c-b68c-c104c050eb7b",
+                "resourcePath": "sprites\\sDust\\sDust.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -267,6 +299,14 @@
             "Value": {
                 "id": "e7db7589-3207-4425-9904-d9f3c006b4ff",
                 "resourcePath": "objects\\oGun\\oGun.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6b328b53-25f9-4f60-a596-26503ebb8137",
+            "Value": {
+                "id": "8368b838-82e6-4563-af56-7a7c5b97dca6",
+                "resourcePath": "objects\\oGunPickup\\oGunPickup.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -327,6 +367,14 @@
             }
         },
         {
+            "Key": "7e7e8575-d1ed-4373-9e8c-e6ca9b8d610c",
+            "Value": {
+                "id": "5e87c745-9ac4-45a4-8ac0-5cd7322536a5",
+                "resourcePath": "objects\\pShootable\\pShootable.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "86d807d2-947b-48be-9813-c37033708f2d",
             "Value": {
                 "id": "dd9edc61-a44b-4011-a5ee-d5e13d39e1c1",
@@ -340,6 +388,14 @@
                 "id": "a152ddc0-1c48-45db-84ca-56e5862a9548",
                 "resourcePath": "scripts\\screenShake\\screenShake.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8fa91053-05e3-4c8c-a355-7e727f7f84dd",
+            "Value": {
+                "id": "16463d89-3add-4820-8188-a074e6d0e0b3",
+                "resourcePath": "sprites\\sGunPickup\\sGunPickup.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -436,6 +492,22 @@
                 "id": "8ae6a963-47ab-479e-a951-2d6c5a2bd78d",
                 "resourcePath": "objects\\oEnemy\\oEnemy.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "bf8d44cc-3b7e-433a-84e3-f4cd856693a0",
+            "Value": {
+                "id": "c07a92bc-3b0d-4760-b64d-9425e9f5646f",
+                "resourcePath": "objects\\oHitSpark\\oHitSpark.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c36d941e-ab48-4e50-b15c-147140834daa",
+            "Value": {
+                "id": "e0a8e42c-bd56-4ed6-afb4-8263b7fec512",
+                "resourcePath": "sprites\\sCrate\\sCrate.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
